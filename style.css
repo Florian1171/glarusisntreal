@@ -205,6 +205,49 @@ footer .container{
 	align-items: center;
 }
 
+.topnav #myLinks {
+  display: none;
+  z-index: 100;
+	background-color: #1c768f;
+	min-height: 100vh;
+	text-align: center;
+}
+.topnav #myLinks a{
+  padding: 30px;
+}
+
+#firstBurgerLink{
+	margin: 35vh 0 0 0;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  z-index: 200;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #1c768f;
+  display: none;
+  transition: .3s;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #4291a7;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
 @media screen and (max-width:992px) {
 /* Zusätzliche Regeln für kleinere Monitore  */
    .container{width: 100%;}
@@ -240,4 +283,14 @@ footer .container{
 	nav ul {padding-top: 85px;}
 	
 	nav ul a{margin: 12px 6px; background-color: #1c768f; color: white;}
+}
+
+@media screen and (max-width:410px) {
+	.topnav a.icon {display: block;position: absolute; top:20px; right: 10px;}
+	
+	nav div{margin: 0;}
+	
+	nav div img{position: absolute; left: 10px;}
+	
+	nav ul a{display: none;}
 }
