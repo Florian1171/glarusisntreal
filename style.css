@@ -59,12 +59,14 @@ nav ul a{
 	overflow: hidden;
 	position: relative;
 	margin-bottom: 80px;
+	min-height: 266px;
 }
 
 .landing_banner img{
 	width: 100%;
 	position: relative;
 	top: 50%;
+	min-height: 266px;
 }
 
 #landing_countdown{
