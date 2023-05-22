@@ -1,0 +1,243 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#landing{
+	width: 100%;
+}
+
+.container{
+	width: 1400px;
+	margin: 0 auto;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav div{
+	margin-right: 40px;
+}
+
+nav div img{
+	height: 80px;
+	padding: 10px;
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+}
+
+nav ul a{
+	padding: 20px 40px 20px 40px;
+	color: #1c768f;
+	transition: 0.3s;
+	margin-right: 12px;
+}
+
+nav ul a:hover{
+	background-color: #1c768f;
+	color: white;
+}
+
+nav ul a{
+	text-decoration: none;
+}
+
+.landing_banner{
+	max-height: 700px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 80px;
+}
+
+.landing_banner img{
+	width: 100%;
+	position: relative;
+	top: 50%;
+}
+
+#landing_countdown{
+	position: absolute;
+	top: 35%;
+	width: 60%;
+	left: 20%;
+	padding: 50px;
+	/* border-radius: 15px; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.35);
+	/* border-radius: 16px; */
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(6.5px);
+	-webkit-backdrop-filter: blur(6.5px);
+	border: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+#landing_countdown h1{
+	font-size: 32px;
+}
+
+#landing_p{
+	padding: 9px 0px;
+}
+
+#demo{
+	font-size: 24px;color: #1c768f;
+	font-weight: bold;
+}
+
+#welcome_text{
+	width: 75%;
+}
+
+#beweis_button{
+	padding: 20px 40px;
+	background-color: #1c768f;
+	text-align: center;
+	width: 25%;
+	text-decoration: none;
+	color: white;
+	transition: 0.3s;
+}
+
+#beweis_button:hover{
+	background-color: #4291a7;
+}
+
+#beweise{
+	padding: 0px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#beweise h2{
+	color: #1c768f;
+}
+
+hr{
+	display: inline-block;
+	width: 90%;
+	border-top: 1px solid #1c768f;
+}
+
+article{
+	margin: 40px;
+	display: inline-block;
+	width: calc((100% / 2) - 83px);
+	-webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.15); 
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.1);
+
+}
+
+article div{
+	width: calc(100% / 3);
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+
+article section{
+	width: calc(((100% / 3) * 2) - 40px);
+	float: left;
+	padding: 20px;
+}
+
+article section h3{
+	font-size: 64px;
+	color: #1c768f;
+	margin-bottom: 10px;
+}
+
+article section p{
+	margin-bottom: 40px;
+}
+
+article section a{
+	padding: 20px 40px;
+	background-color: #1c768f;
+	text-align: center;
+	width: 25%;
+	text-decoration: none;
+	color: white;
+	transition: 0.3s;
+}
+
+article section a:hover{
+	background-color: #4291a7;
+}
+
+article div img{
+	  min-width: 100%;
+	  max-height: 340px;
+	  width: auto;
+	  height: auto;
+}
+
+#newArticle{
+	display: none;
+}
+
+footer{
+	background-color: #1c768f; 
+	margin-top: 65px;
+	color: white;
+}
+
+footer .container{
+	padding: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media screen and (max-width:992px) {
+/* Zusätzliche Regeln für kleinere Monitore  */
+   .container{width: 100%;}
+	
+	#landing_countdown{display: block; position: absolute; top: 0; left: 0; width: calc(100% - 20px); padding: 10px; text-align: center; margin: 10px;}
+	
+	#welcome_text{width: 100%; display: block;}
+	
+	#beweis_button{width: 100%; display: block; margin-top: 10px;}
+	
+	hr{width: 60%;}
+	
+	article{margin: 20px;width: calc(100% - 40px);}
+	
+	article section a{display: block;width: 100%;}
+	
+	article section{width: 100%;}
+	
+	article div{width: 100%;overflow: hidden; max-height: 350px;}
+	
+	article div img{max-height: 100%; width: 100%;}
+	
+	footer .container{ display: block; }
+	
+	footer .container div{ margin: 20px 0; text-align: center;}
+	
+	nav{justify-content: space-around;}
+	
+	nav div{ display: flex; justify-content: space-around;width: 100%; position: absolute; top: 0; left: 0; margin: 10px 0;}
+	
+	nav div img{display: inline-block; width: 80px; margin: 0 auto;}
+	
+	nav ul {padding-top: 85px;}
+	
+	nav ul a{margin: 12px 6px; background-color: #1c768f; color: white;}
+}
