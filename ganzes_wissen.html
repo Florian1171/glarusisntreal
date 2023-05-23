@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Glarus isnt real | Ganzes Wissen</title>
+</head>
+<body>
+	<section id="landing">
+		<div class="container">
+			<!-- 				Navigation				   -->
+			<nav>
+				<ul>
+					<a href="index.html">Home</a>
+					<a href="#beweise">Beweise</a>
+					<a href="#">Ganzes Wissen</a>
+				</ul>
+				
+				<!-- Hamburger Menu -->
+				<div class="topnav">
+				  <!-- Navigation links (hidden by default) -->
+				  <div id="myLinks">
+					<a onclick="myFunction()" id="firstBurgerLink" href="index.html">Home</a>
+					<a onclick="myFunction()" href="#beweise">Beweise</a>
+					<a onclick="myFunction()" href="#">Ganzes Wissen</a>
+				  </div>
+				  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+				  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				  </a>
+				</div>
+				<script>
+					function myFunction() {
+					  var x = document.getElementById("myLinks");
+					  if (x.style.display === "block") {
+						x.style.display = "none";
+					  } else {
+						x.style.display = "block";
+					  }
+					}
+				</script>
+
+				<div><img src="img/gir-logo.jpg" alt="Logo Glarus isnt real"></div>
+			</nav>
+		</div>
+			<section class="landing_banner">
+				<img src="img/banner.jpg" alt="Image of Glarus">
+				<div>
+					<section id="landing_countdown">
+						<div>
+							<h1>Willkommen bei der Wahrheit</h1>
+							<p id="landing_p">Hier erhältst du Fakten über den angeblich 26. Kanton der Schweiz. Seit langer Zeit verschweigen uns die einflussreichen Machthaber von Glarus die verstörenden Geheimnisse über den Kanton. Aber genug des blinden Glaubens!</p>
+						</div>
+					</section>
+				</div>
+			</section>
+			
+		<div class="container">
+			<section id="ganzesWissen">
+				<h2>Ganze Geschichte</h2>
+				<hr>
+			</section>
+				
+			<article class="wissenArtikel">
+				<div class="wissenBildContainer">
+					<img src="img/schweiz-ohne-glarus.jpg" alt="Beweis 1">
+				</div>
+				<p>Wir heissen dich herzlich willkommen auf der Seite der Wahrheit. Hier erhältst du Fakten über den angeblich 26. Kanton der Schweiz. Seit 1352 verschweigen uns die einflussreichen Machthaber von Glarus die verstörenden Geheimnisse über den Kanton. Aber genug des blinden Glaubens! Von Zeit zu Zeit werden hier weitere Artikel hochgeladen, in denen du die Wahrheit erfährst.</p>
+			</article>
+			
+			
+		</div>
+		
+		<div class="clear"></div>
+	</section>
+	<footer>
+		<div class="container">
+			<div>
+			Zieh dir die Brille der Vernunft an und glaube nicht an alle Lügen des Systems!
+			</div>
+			<div>
+			© 2023
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

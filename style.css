@@ -59,14 +59,14 @@ nav ul a{
 	overflow: hidden;
 	position: relative;
 	margin-bottom: 80px;
-	min-height: 272px;
+	min-height: 266px;
 }
 
 .landing_banner img{
 	width: 100%;
 	position: relative;
 	top: 50%;
-	min-height: 272px;
+	min-height: 266px;
 }
 
 #landing_countdown{
@@ -132,8 +132,19 @@ nav ul a{
 
 hr{
 	display: inline-block;
-	width: 90%;
+	width: 82%;
 	border-top: 1px solid #1c768f;
+}
+
+#ganzesWissen{
+	padding: 0px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#ganzesWissen h2{
+	color: #1c768f;
 }
 
 article{
@@ -190,6 +201,20 @@ article div img{
 	  height: auto;
 }
 
+article section p{
+      max-height: 144px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      -ms-box-orient: vertical;
+      box-orient: vertical;
+      -webkit-line-clamp: 8;
+      -moz-line-clamp: 8;
+      -ms-line-clamp: 8;
+      line-clamp: 8;
+      overflow: hidden;
+}
+
 #newArticle{
 	display: none;
 }
@@ -205,6 +230,10 @@ footer .container{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.clear{
+	clear: both;
 }
 
 .topnav #myLinks {
@@ -250,6 +279,28 @@ footer .container{
   color: white;
 }
 
+.wissenArtikel{
+	box-shadow: none;
+	display: flex;
+	width: calc(100% - 80px);
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wissenArtikel p{
+	width: calc(((100% / 3) * 2) - 90px);
+}
+
+.wissenBildContainer{
+	width: calc((100% / 3) + 50px);
+}
+
+.wissenBildContainer img{
+	max-width: 100%;
+	max-height: auto;
+}
+
+
 @media screen and (max-width:992px) {
 /* Zusätzliche Regeln für kleinere Monitore  */
    .container{width: 100%;}
@@ -268,6 +319,8 @@ footer .container{
 	
 	article section{width: 100%;}
 	
+	article section p{display: inline-block; overflow: visible; max-height: 100%; margin-bottom: 20px;}
+	
 	article div{width: 100%;overflow: hidden; max-height: 350px;}
 	
 	article div img{max-height: 100%; width: 100%;}
@@ -285,6 +338,12 @@ footer .container{
 	nav ul {padding-top: 85px;}
 	
 	nav ul a{margin: 12px 6px; background-color: #1c768f; color: white;}
+	
+	.wissenArtikel{display: block; width: calc(100% - 40px);margin: 20px;}
+	
+	.wissenBildContainer{display: block; width: 100%;}
+	
+	.wissenArtikel p{width: 100%; padding-top: 20px; height: auto; overflow: hidden;}
 }
 
 @media screen and (max-width:410px) {
