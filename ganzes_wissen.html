@@ -71,7 +71,7 @@
 					<br>
 					Nun beginnt die Ära der Demaskierung von Glarus. <br>
 					<br>
-					Der Kanton Glarus ist ein Kanton in der Schweiz. Er befindet sich im östlichen Teil des Landes und grenzt an die Kantone St. Gallen, Schwyz und Graubünden. Die Hauptstadt des Kantons ist Glarus (Sehr Suspekt). <br>
+					Der Kanton Glarus ist ein Kanton in der Schweiz. Er befindet sich im östlichen Teil des Landes und grenzt an die Kantone St. Gallen, Schwyz und Graubünden. Die Hauptstadt des Kantons ist Glarus (Sehr suspekt). <br>
 					<br>
 					"Die Glarner Alpen erstrecken sich über einen Grossteil des Kantons und bieten vielfältige Möglichkeiten für Outdoor-Aktivitäten wie Wandern, Skifahren und Bergsteigen. Die Landschaft des Kantons Glarus ist geprägt von hohen Bergen, tiefen Tälern und malerischen Seen." <br>
 					<br>
@@ -81,7 +81,48 @@
 				</p>
 			</article>
 			
+			<p id="demo" class="neusterArtikel"></p>
 			
+			<article class="wissenArtikel" id="newArticle">
+				<div class="wissenBildContainer">
+					<img src="img/schweiz-ohne-glarus.jpg" alt="Beweis 1">
+				</div>
+					<p>
+						Test Test Test Test Test Test Test 
+					</p>
+			</article>
+
+			<script>
+				// Set the date we're counting down to
+				var countDownDate = new Date("May 28, 2023 15:38:00").getTime();
+
+				// Update the count down every 1 second
+				var x = setInterval(function() {
+
+				  // Get today's date and time
+				  var now = new Date().getTime();
+
+				  // Find the distance between now and the count down date
+				  var distance = countDownDate - now;
+
+				  // Time calculations for days, hours, minutes and seconds
+				  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				  // Display the result in the element with id="demo"
+				  document.getElementById("demo").innerHTML = "Neuer Artikel in: " + days + "d " + hours + "h "
+				  + minutes + "m " + seconds + "s ";
+
+				  // If the count down is finished, write some text
+				  if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("demo").innerHTML = "Neuster Artikel:";
+					document.getElementById("newArticle").style.display = "flex";
+				  }
+				}, 1000);			
+			</script>			
 		</div>
 		
 		<div class="clear"></div>
