@@ -321,11 +321,13 @@ footer .container{
 	backdrop-filter: blur(6.5px);
 	-webkit-backdrop-filter: blur(6.5px);
 	border: 1px solid rgba(255, 255, 255, 0.36);
-	
+}
+
+#getAccess h4{
+	margin-bottom: 18px;
 }
 
 #getAccess input{
-	margin-top: 20px;
 	height: 56px;
 }
 
@@ -345,6 +347,10 @@ input[type=checkbox]{
 	width: 18px;
 	height: 18px;
 	margin-top: 18px;
+}
+
+.neusterArtikel{
+	margin-left: 40px;
 }
 
 /** Angang Loading Animation **/
