@@ -5,142 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Glarus isnt real | Home</title>
+<title>Glarus isnt real | Get Access</title>
 </head>
-<body>
-	<section id="landing">
-		<div class="container">
-			<!-- 				Navigation				   -->
-			<nav>
-				<ul>
-					<a href="#">Home</a>
-					<a href="#beweise">Beweise</a>
-					<a href="ganzes_wissen.html">Ganzes Wissen</a>
-				</ul>
+<body id="getAccessBody">
+	
+	<div id="getAccess">
+		<h4>Hiermit bestätige ich, dass ich nicht Elon Musk bin!</h4>
+		<input type="checkbox" id="confirm"  onclick="validate()"/>
+		<div class="wrapper" id="loadingAnimation"> <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/> <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg></div>
+	</div>
+			
+	<script type="text/javascript">
+		function validate() {
+			if (document.getElementById('confirm').checked) {
 				
-				<!-- Hamburger Menu -->
-				<div class="topnav">
-				  <!-- Navigation links (hidden by default) -->
-				  <div id="myLinks">
-					<a onclick="myFunction()" id="firstBurgerLink" href="#">Home</a>
-					<a onclick="myFunction()" href="#beweise">Beweise</a>
-					<a onclick="myFunction()" href="ganzes_wissen.html">Ganzes Wissen</a>
-				  </div>
-				  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-				  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-					<i class="fa fa-bars"></i>
-				  </a>
-				</div>
-				<script>
-					function myFunction() {
-					  var x = document.getElementById("myLinks");
-					  if (x.style.display === "block") {
-						x.style.display = "none";
-					  } else {
-						x.style.display = "block";
-					  }
-					}
-				</script>
-
-				<div><img src="img/gir-logo.jpg" alt="Logo Glarus isnt real"></div>
-			</nav>
-		</div>
-			<section class="landing_banner">
-				<img src="img/banner.jpg" alt="Image of Glarus">
-				<div>
-					<section id="landing_countdown">
-						<div id="welcome_text">
-							<h1>Willkommen bei der Wahrheit</h1>
-							<p id="landing_p">Ein neuer Beweis für die Nichtexistenz von Glarus wird veröffentlicht in:</p>
-							<!-- Display the countdown timer in an element -->
-							<p id="demo"></p>
-
-							<script>
-							// Set the date we're counting down to
-							var countDownDate = new Date("May 23, 2023 15:38:00").getTime();
-
-							// Update the count down every 1 second
-							var x = setInterval(function() {
-
-							  // Get today's date and time
-							  var now = new Date().getTime();
-
-							  // Find the distance between now and the count down date
-							  var distance = countDownDate - now;
-
-							  // Time calculations for days, hours, minutes and seconds
-							  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-							  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-							  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-							  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-							  // Display the result in the element with id="demo"
-							  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-							  + minutes + "m " + seconds + "s ";
-
-							  // If the count down is finished, write some text
-							  if (distance < 0) {
-								clearInterval(x);
-								document.getElementById("demo").innerHTML = "Der neue Beweis ist online";
-								document.getElementById("newArticle").style.display = "inline-block";
-							  }
-							}, 1000);
-								
-							</script>
-						</div>
-						<a id="beweis_button" href="#beweise">Zu den Beweisen</a>
-					</section>
-				</div>
-			</section>
-			
-		<div class="container">
-			<section id="beweise">
-				<h2>Beweise</h2>
-				<hr>
-			</section>
-				
-			
-			<!----Beginn-Artikel----->
-			<article id="newArticle">
-				<div>
-					<img src="img/beweis1.jpg" alt="Beweis 1">
-				</div>
-				<section>
-					<h3>04</h3>
-					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-					<a href="ganzes_wissen.html">Zum ganzen Beitrag</a>
-					<div class="clear"></div>
-				</section>
-			</article>
-			<!-----Ende-Artikel------>
-			
-			
-			<!----Beginn-Artikel----->
-			<article>
-				<div>
-					<img src="img/schweiz-ohne-glarus-thumbnail.jpg" alt="Beweis 1"> 
-				</div>
-				<section>
-					<h3>01</h3>
-					<p>Wir heissen dich herzlich willkommen auf der Seite der Wahrheit. Hier erhältst du akten über den angeblich 26. Kanton der Schweiz. Seit 1352 verschweigen uns die einflussreichen Machthaber von Glarus die verstörenden Geheimnisse über den Kanton. Aber genug des blinden Glaubens! Von Zeit zu Zeit werden hier weitere Artikel hochgeladen, in denen du die Wahrheit erfährst.</p>
-					<a href="ganzes_wissen.html">Zum ganzen Beitrag</a>
-					<div class="clear"></div>
-				</section>
-			</article>
-			<!-----Ende-Artikel------>
-		</div>
-		
-		<div class="clear"></div>
-	</section>
-	<footer>
-		<div class="container">
-			<div>
-			Zieh dir die Brille der Vernunft an und glaube nicht an alle Lügen des Systems!
-			</div>
-			<div>
-			© 2023
-			</div>
-		</div>
-	</footer>
+				setTimeout(redirect, 1800);
+				function redirect() {
+					window.location.replace("home.html");
+				}
+			}
+		}
+	</script>
 </body>
 </html>
